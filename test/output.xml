@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230425 16:52:52.142" rpa="true" schemaversion="3">
+<suite id="s1" name="Tasks" source="c:\Users\cdess\OneDrive\Documents\Robocorp\test\tasks.robot">
+<test id="s1-t1" name="Get credentials" line="9">
+<kw name="Get Secret" library="RPA.Robocorp.Vault">
+<var>${secret}</var>
+<arg>credentials_robotsparebin</arg>
+<doc>Read a secret from the configured source, e.g. Robocorp Vault,
+and return it as a ``Secret`` object.</doc>
+<msg timestamp="20230425 16:52:54.195" level="INFO">Protecting keyword: RPA.Robocorp.Vault.Get Secret</msg>
+<msg timestamp="20230425 16:52:59.073" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="FAIL" starttime="20230425 16:52:54.195" endtime="20230425 16:52:59.073"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${secret}[password]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230425 16:52:59.074" endtime="20230425 16:52:59.075"/>
+</kw>
+<status status="FAIL" starttime="20230425 16:52:54.194" endtime="20230425 16:52:59.076">RobocorpVaultError</status>
+</test>
+<doc>Template robot main suite.</doc>
+<status status="FAIL" starttime="20230425 16:52:52.156" endtime="20230425 16:52:59.079"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
